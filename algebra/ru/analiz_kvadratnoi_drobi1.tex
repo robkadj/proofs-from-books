@@ -1,0 +1,75 @@
+\documentclass{amsart}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{gensymb}
+\usepackage{MnSymbol}
+\usepackage{graphicx}
+
+\begin{document}
+
+\textbf{Выяснить, при каких значениях $x$ дробь $\frac{x^2+2x-3}{2x-x^2}$ положительна и при каких - отрицательна}
+
+Знак дроби зависит от знака числителя и знаменателя (таблица 1)
+\begin{center}
+\begin{tabular}{ c c c c c }
+ \hline
+ дробь & + & - & - & +  \\ 
+ числитель & - & - & + & +  \\  
+ знаменатель & - & + & - & + \\ 
+ \hline   
+\end{tabular}
+\end{center}
+
+Решаем квадратное уравнение (числитель) $x^2+2x-3=0$ \\
+$D = b^2 - 4ac = 4 + 4 * 1 * 3 = 16$ \\
+$\sqrt{D} = 4$ \\
+$x_1 = \frac{b + \sqrt{D}}{2a} = \frac{-2 + 4}{2} = \frac{2}{2} = 1$ \\
+$x_2 = \frac{b - \sqrt{D}}{2a} = \frac{-2 - 4}{2} = \frac{-6}{2} = -3$ \\
+
+Решаем квадратное уравнение (знаменатель) $-x^2 + 2x + 0 = 0$ \\
+$D = b^2 - 4ac = 4 + 4 * 0 = 4$ \\
+$\sqrt{D} = 2$ \\
+$x_1 = \frac{b + \sqrt{D}}{2a} = \frac{-2 + 2}{-2} = 0$ \\
+$x_2 = \frac{b - \sqrt{D}}{2a} = \frac{-2 - 2}{-2} = \frac{-4}{-2} = 2$ \\
+
+Из вышеприведенных результатах можем сделать следующие выводы : \\
+
+Знак числителя (таблица 2) - \\
+\begin{center}
+ \begin{tabular}{c c}
+ \hline
+     Значение x & Знак \\
+     $x < -3$ and $x > 1$ & $ + $ \\
+     $-3 < x < 1$ & $ - $ \\ 
+ \hline
+ \end{tabular}
+\end{center}
+
+Знак знаменателя (таблица 3) - \\
+\begin{center}
+ \begin{tabular}{c c}
+ \hline
+     Значение x & Знак \\
+     $0 < x < 2$ & $ + $ \\
+     $x < 0$ and $x > 2$ & $ - $ \\ 
+ \hline    
+ \end{tabular}
+\end{center}
+
+Комбинируя данные из таблиц 1, 2 и 3 получаем :
+
+\begin{center}
+ \begin{tabular}{c c c c c}
+ \hline
+     дробь         &      +              &       -          &        -                 &      +                 \\
+	 числитель     & $-3 < x < 1$        &    $-3 < x < 1$  &   $x < -3$ or $x > 1$   &  $x < -3$ or $x > 1$  \\
+	 знаменатель   & $x < 0$ or $x > 2$ &    $0 < x < 2$   &   $x < 0$ or $x > 2$    &  $0 < x < 2$            \\
+	 пересечение   & $-3 < x < 0$        &    $0 < x < 1 $  &   $x < -3 $ or $x > 2$   &  $\emptyset$            \\
+  \hline
+ \end{tabular}
+\end{center}
+
+Надо отметить что дробь превращается в 0 (то есть не имеет никакого знака) при $x_1 = 1$ и $x_2 = -3$, так как сам числитель превращается в 0. И не емеет значения при $x_1 = 0$ и $x_2 = 2$, так как знаменатель 0.
+
+$\blacksquare$
+\end{document}
